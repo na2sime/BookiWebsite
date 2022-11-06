@@ -1,0 +1,21 @@
+@import url("https://fonts.google.com/specimen/Raleway");
+
+:root {
+    /*===== COLORS =====*/
+    --first-color: #0065FC;
+    --second-color: #DEEBFF;
+    --background-color: #F2F2F2;
+    /*===== Tipo =====*/
+    --body-font: 'Raleway', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+}
+
+body {
+    max-width: 1400px;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--background-color);
+}
