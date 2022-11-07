@@ -14,8 +14,40 @@
 }
 
 body {
-    max-width: 1400px;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+#menu {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+#logo {
+    width: 61px;
+    height: 19px;
+}
+
+.headerButton {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.headerButton:hover {
+    color: var(--first-color);
+    padding-top: 10px;
+    transition-duration: 0.01s;
+    border-top:3px solid var(--first-color);
+    border-top-width: 2px;
 }
