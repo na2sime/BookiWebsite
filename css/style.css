@@ -171,14 +171,21 @@ nav {
 
 #info {
     display: flex;
-    flex-direction: row;
-    margin: 10px 0 10px;
-    gap: 5px;
-    align-self: flex-start;
-    align-items: flex-start;
 }
 
-/*===== FirstSection =====*/
+#info .fas.fa-info {
+    color: var(--first-color);
+    border: 2px solid var(--background-color);
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/*===== Hebergements =====*/
 
 #firstSection {
     padding: 0 75px 0;
@@ -187,7 +194,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     gap: 25px;
-    height: 50rem;
+    height: 600px
 }
 
 #city {
@@ -197,18 +204,31 @@ nav {
     background-color: var(--background-color);
     border-radius: 18px 18px 18px 18px;
     flex-wrap: wrap;
-    width: 65%;
+    width: 60%;
     height: 100%;
 }
 
-.cardContainer {
-    display: flex;
-    flex-direction: row;
+#city h1 {
+    font-size: 150%;
+    margin: 20px 0 20px 70px;
 }
 
-.card {
-    width: 220px;
-    height: auto;
+#city h2 {
+    font-size: 110%;
+    margin: 0 0 0 70px;
+}
+
+#city .cardContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 0 0 0 35px;
+    width: 100%;
+}
+
+#city .card {
+    width: 290px;
+    height: 211px;
     background: white;
     margin-bottom: 40px;
     border-radius: 20px 20px 20px 20px;
@@ -217,16 +237,52 @@ nav {
     padding-bottom: 10px;
 }
 
-.card img {
-    object-fit: cover;
-    width: 100%;
-    height: 120px;
-    border-radius: 20px 25px 0 0;
-    padding-right: 10px;
+#city .card img {
+    width: 280px;
+    height: 130px;
+    border-radius: 23px 23px 0 0;
     margin: 5px 0 0 5px;
 }
 
-.cardInfo {
+#city .cardInfo {
     margin-left: 15px;
-    line-height: 25px;
+}
+
+#city.star .blue {
+    color: var(--first-color);
+}
+
+#city .star .grey {
+    color: var(--second-color);
+}
+
+/*===== Populaire =====*/
+
+#popular {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--background-color);
+    border-radius: 18px 18px 18px 18px;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 100%;
+}
+
+#popular .card {
+    width: 290px;
+    height: 211px;
+    background: white;
+    margin-bottom: 40px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062);
+    transition: 0.8s;
+    padding-bottom: 10px;
+}
+
+#popular .card img {
+    width: 280px;
+    height: 130px;
+    border-radius: 23px 23px 0 0;
+    margin: 5px 0 0 5px;
 }
