@@ -12,15 +12,25 @@
 }
 
 * {
-    box-sizing: border-box;
     font-size: var(--normal-font-size);
 }
 
 body {
     font-family: var(--body-font);
-    margin: auto;
-    max-width: 1400px;
+    margin: 0;
+    padding: 0 50px;
+    font-size: var(--normal-font-size);
 }
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 120%;;
+}
+
+/*===== HEADER =====*/
 
 header {
     display: flex;
@@ -28,6 +38,50 @@ header {
     height: 102px;
     align-items: center;
     justify-content: space-between;
+}
+
+#logo {
+    width: 61px;
+    height: 19px;
+}
+
+#menu {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.headerButton {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    padding: 0 20px 0;
+    height: 100%;
+    border-top: 3px solid transparent;
+}
+
+.headerButton:hover {
+    color: var(--first-color);
+    border-top: 3px solid var(--first-color);
+    border-top-width: 2px;
+}
+
+/*===== TITLES & nav =====*/
+
+#search {
+    padding: 0 75px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#searchBar {
+    height: 40px;
+    display: flex;
 }
 
 form {
@@ -65,6 +119,67 @@ nav {
     height: 100%;
 }
 
+#titles h1 {
+    margin-bottom: 5px
+}
+
+#titles #subtitle {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/*===== Filter =====*/
+
+#filter {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#filter h2 {
+    font-size: 119%;
+    margin-right: 20px;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+}
+
+#buttons .filterButton {
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 18px 18px 18px 18px;
+    border: 2px solid lightgray;
+    display: flex;
+    text-decoration: none;
+}
+
+#buttons .filterButton i {
+    color: var(--first-color);
+}
+
+#buttons .filterButton:hover {
+    background-color: rgba(0, 101, 252, 0.3);
+}
+
+#buttons .filterButton .text {
+    padding: 0 10px;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px;
+    gap: 5px;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+
+/*===== FirstSection =====*/
+
 #firstSection {
     padding: 0 75px 0;
     display: flex;
@@ -84,79 +199,6 @@ nav {
     flex-wrap: wrap;
     width: 65%;
     height: 100%;
-}
-
-#filter {
-    width: 100%;
-    height: 45px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    margin: 35px 0 1px;
-}
-
-#filter h2 {
-    font-size: 119%;
-}
-
-#search {
-    padding: 0 75px 0;
-    display: flex;
-    flex-direction: column;
-}
-
-#menu {
-    align-self: flex-end;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
-
-#logo {
-    width: 61px;
-    height: 19px;
-}
-
-#searchBar {
-    height: 40px;
-    display: flex;
-}
-
-#titles {
-    display: flex;
-    flex-direction: column;
-}
-
-#titles h1 {
-    width: 575px;
-    height: 26px;
-    left: 55px;
-    top: 126px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 0;
-}
-
-#titles h2 {
-    width: 296px;
-    height: 19px;
-    left: 55px;
-    top: 160px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
-}
-
-#info {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0 10px;
-    gap: 5px;
-    align-self: flex-start;
-    align-items: flex-start;
 }
 
 .cardContainer {
@@ -187,116 +229,4 @@ nav {
 .cardInfo {
     margin-left: 15px;
     line-height: 25px;
-}
-
-.filterButton {
-    color: black;
-    text-align: center;
-    cursor: pointer;
-    padding: 10px 10px;
-    margin: 10px;
-    outline: none;
-    border-radius: 18px 18px 18px 18px;
-    border: 2px solid lightgray;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    text-decoration: none;
-}
-
-.filterButton:hover {
-    background-color: rgba(0, 101, 252, 0.3);
-}
-
-.headerButton {
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    transition-duration: 0.3s;
-    cursor: pointer;
-    padding: 0 20px 0;
-    height: 100%;
-    border-top: 3px solid transparent;
-}
-
-.headerButton:hover {
-    color: var(--first-color);
-    border-top: 3px solid var(--first-color);
-    border-top-width: 2px;
-}
-
-/* ===== MEDIA QUERIES=====*/
-
-/* TABLET */
-@media screen and (max-width: 992px) {
-    body {
-        font-family: var(--body-font);
-        margin: auto;
-        max-width: 992px;
-    }
-}
-
-/* PHONE */
-@media screen and (max-width: 768px) {
-    body {
-        font-family: var(--body-font);
-        margin: auto;
-        max-width: 768px;
-    }
-
-    header {
-        display: flex;
-        padding: 20px 75px 0;
-        height: 102px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    #menu {
-        padding: 20px 0 0;
-    }
-
-    #search {
-        padding: 0 0 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .headerButton {
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid transparent;
-    }
-
-    .headerButton:hover {
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid var(--first-color);
-        border-bottom-width: 2px;
-    }
-
-    /*
-    #titles {
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 0 0;
-        max-height: 100px;
-        max-width: 120px;
-    }
-
-     */
-    #titles h1 {
-        max-width: 330px;
-        max-height: 26px;
-    }
-
-    #titles h2 {
-        max-width: 296px;
-        max-height: 19px;
-    }
 }

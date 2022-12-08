@@ -1,0 +1,52 @@
+body {
+    max-width: 768px;
+}
+/*===== HEADER =====*/
+header {
+    display: flex;
+    padding: 20px 75px 0;
+    height: 102px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#menu {
+    padding: 20px 0 0;
+}
+
+.headerButton {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.headerButton:hover {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid var(--first-color);
+    border-bottom-width: 2px;
+}
+/*===== TITLES & nav =====*/
+
+#search {
+    padding: 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*===== Filter =====*/
+
+#filter{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#filter h2 {
+    text-align: start;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -5,6 +5,8 @@
     <script src="https://kit.fontawesome.com/a4a70bb18b.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="images/logo/Booki@3x.png"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/tablette.css" media="screen and (max-width: 992px)">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width: 768px)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Booki</title>
 </head>
@@ -22,7 +24,7 @@
     <section id="search">
         <div id="titles">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h2>En plein centre-ville ou en pleine nature</h2>
+            <span id="subtitle">En plein centre-ville ou en pleine nature</span>
         </div>
         <form>
             <div id="searchBar">
@@ -32,20 +34,37 @@
             </div>
         </form>
         <div id="filter">
-            <h2><strong>Filtres</strong></h2>
-            <a href="#" class="filterButton"><i class="fa-solid fa-money-bill-wave" style="color: #0065FC"></i><strong>Economique</strong></a>
-            <a href="#" class="filterButton"><i class="fa-solid fa-person" style="color: #0065FC"></i><strong>Famillial</strong></a>
-            <a href="#" class="filterButton"><i class="fa-solid fa-heart" style="color: #0065FC"></i> Romantique</a>
-            <a href="#" class="filterButton"><i class="fa-solid fa-dog" style="color: #0065FC"></i> Animeaux autorisés</a>
+            <h2>Filtres</h2>
+            <div id="buttons">
+                <a href="#" class="filterButton">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <span class="text">Economique</span>
+                </a>
+                <a href="#" class="filterButton">
+                    <i class="fa-solid fa-person"></i>
+                    <span class="text">Famillial</span>
+                </a>
+                <a href="#" class="filterButton">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="text">Romantique</span>
+                </a>
+                <a href="#" class="filterButton">
+                    <i class="fa-solid fa-dog"></i>
+                    <span class="text">Animeaux autorisés</span>
+                </a>
+            </div>
         </div>
-        <a id="info"><i class="fa-solid fa-info" style="color: #0065FC"></i>Plus de 500 logements sont disponibles dans cette ville</a>
+        <a id="info"><i class="fa-solid fa-info" style="color: #0065FC"></i>Plus de 500 logements sont disponibles dans
+            cette ville</a>
     </section>
     <div id="firstSection">
         <section id="city">
             <h2>Hébergements à Marseille</h2>
             <div class="cardContainer">
                 <div class="card">
-                    <a href="images/hebergements/1_xlarge/photo1.jpg"><img  src="images/hebergements/1_xlarge/photo1.jpg" alt="Auberge la Cannebière" title="Cliquez pour agrandir"/></a>
+                    <a href="images/hebergements/1_xlarge/photo1.jpg"><img src="images/hebergements/1_xlarge/photo1.jpg"
+                                                                           alt="Auberge la Cannebière"
+                                                                           title="Cliquez pour agrandir"/></a>
                     <div class="cardInfo">
                         <h4>Auberge la Cannebière</h4>
                         <p>Nuit à partir de <strong>25€</strong></p>
@@ -59,7 +78,9 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="images/hebergements/1_xlarge/photo2.jpg"><img  src="images/hebergements/1_xlarge/photo2.jpg" alt="Hotel du port" title="Cliquez pour agrandir"/></a>
+                    <a href="images/hebergements/1_xlarge/photo2.jpg"><img src="images/hebergements/1_xlarge/photo2.jpg"
+                                                                           alt="Hotel du port"
+                                                                           title="Cliquez pour agrandir"/></a>
                     <div class="cardInfo">
                         <h4>Hotel du port</h4>
                         <p>Nuit à partir de <strong>52€</strong></p>
@@ -73,7 +94,9 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="images/hebergements/1_xlarge/photo1.jpg"><img  src="images/hebergements/1_xlarge/photo1.jpg" alt="Hotel Les mouettes" title="Cliquez pour agrandir"/></a>
+                    <a href="images/hebergements/1_xlarge/photo1.jpg"><img src="images/hebergements/1_xlarge/photo1.jpg"
+                                                                           alt="Hotel Les mouettes"
+                                                                           title="Cliquez pour agrandir"/></a>
                     <div class="cardInfo">
                         <h4>Hotel Les mouettes</h4>
                         <p>Nuit à partir de <strong>76€</strong></p>
