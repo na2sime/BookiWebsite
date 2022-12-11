@@ -13,12 +13,13 @@
 
 * {
     font-size: var(--normal-font-size);
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: var(--body-font);
     margin: 0;
-    padding: 0 50px;
     font-size: var(--normal-font-size);
 }
 
@@ -194,7 +195,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     gap: 25px;
-    height: 600px
+    height: 600px;
 }
 
 #city {
@@ -203,57 +204,61 @@ nav {
     align-items: flex-start;
     background-color: var(--background-color);
     border-radius: 18px 18px 18px 18px;
-    flex-wrap: wrap;
+    padding: 30px;
     width: 60%;
-    height: 100%;
 }
 
 #city h1 {
+    padding-bottom: 10px;
     font-size: 150%;
-    margin: 20px 0 20px 70px;
 }
 
 #city h2 {
-    font-size: 110%;
-    margin: 0 0 0 70px;
+    padding-top: 10px;
+    font-size: 130%;
 }
 
 #city .cardContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     flex-direction: row;
-    gap: 25px;
-    margin: 0 0 0 35px;
+    gap: 40px;
     width: 100%;
 }
 
 #city .card {
-    width: 290px;
-    height: 211px;
     background: white;
-    margin-bottom: 40px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 30px 30px 30px 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062);
     transition: 0.8s;
-    padding-bottom: 10px;
+    padding: 5px;
 }
 
 #city .card img {
-    width: 280px;
+    width: 100%;
     height: 130px;
-    border-radius: 23px 23px 0 0;
-    margin: 5px 0 0 5px;
+    border-radius: 25px 25px 0 0;
 }
 
 #city .cardInfo {
-    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
 }
 
-#city.star .blue {
+#city .star .blue {
     color: var(--first-color);
 }
 
 #city .star .grey {
     color: var(--second-color);
+}
+
+#city .card:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
+    transform: translateX(-5px) translateY(6px) scale(1.02);
+    cursor: pointer;
 }
 
 /*===== Populaire =====*/
@@ -264,25 +269,70 @@ nav {
     align-items: flex-start;
     background-color: var(--background-color);
     border-radius: 18px 18px 18px 18px;
-    flex-wrap: wrap;
     width: 40%;
-    height: 100%;
+    padding: 25px 30px 30px 30px;
+}
+
+#popular .title {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#popular .title i {
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+#popular .cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
 }
 
 #popular .card {
-    width: 290px;
-    height: 211px;
+    width: 90%;
+    height: 25%;
     background: white;
-    margin-bottom: 40px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 30px 30px 30px 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062);
     transition: 0.8s;
-    padding-bottom: 10px;
+    display: flex;
+}
+
+#popular .blue {
+    color: var(--first-color);
 }
 
 #popular .card img {
-    width: 280px;
-    height: 130px;
-    border-radius: 23px 23px 0 0;
-    margin: 5px 0 0 5px;
+    width: 30%;
+    height: 155px;
+    padding: 6px;
+    border-radius: 25px 0 0 25px;
+}
+
+#popular .cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+#popular .star .blue {
+    color: var(--first-color);
+}
+
+#popular .star .grey {
+    color: var(--second-color);
+}
+
+#popular .card:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
+    transform: translateX(-5px) translateY(6px) scale(1.02);
+    cursor: pointer;
 }

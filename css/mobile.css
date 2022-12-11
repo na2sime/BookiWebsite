@@ -1,6 +1,3 @@
-body {
-    max-width: 768px;
-}
 /*===== HEADER =====*/
 header {
     display: flex;
@@ -16,6 +13,7 @@ header {
 }
 
 .headerButton {
+    width: 100%;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
 }
