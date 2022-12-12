@@ -1,21 +1,28 @@
+* {
+    padding: 0;
+}
+
 /*===== HEADER =====*/
 header {
     display: flex;
-    padding: 20px 75px 0;
+    width: 100%;
+    padding: 20px 0 0;
     height: 102px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
 }
 
 #menu {
-    padding: 20px 0 0;
+    width: 100%;
+    align-self: center;
+    justify-content: space-between;
 }
 
 .headerButton {
     width: 100%;
     border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid var(--background-color);
 }
 
 .headerButton:hover {
@@ -53,6 +60,7 @@ header {
 
 #firstSection {
     display: flex;
+    padding: 0;
     flex-direction: column;
     height: 1100px;
     gap: 0;
@@ -61,13 +69,27 @@ header {
 #city {
     order: 1;
     background-color: white;
+    padding: 0;
 }
 
 #city .cardContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
+}
+
+#city .card {
+    max-width: 75%;
+    max-height: 60%;
+    background: white;
+    transition: 0.8s;
+}
+
+#city .card img {
     width: 100%;
+    height: 130px;
+    border-radius: 25px 25px 0 0;
 }
 
 /*===== Populaire =====*/
