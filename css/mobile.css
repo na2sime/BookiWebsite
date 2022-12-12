@@ -48,3 +48,36 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/*===== Hebergements =====*/
+
+#firstSection {
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+    gap: 0;
+}
+
+#city {
+    order: 1;
+    background-color: white;
+}
+
+#city .cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+/*===== Populaire =====*/
+
+#popular {
+    border-radius: 0px 0px 0px 0px;
+    height: 40%;
+}
+
+#popular .cardContainer {
+    flex-direction: column;
+    height: 80%;
+}

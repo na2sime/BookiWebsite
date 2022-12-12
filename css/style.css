@@ -19,7 +19,6 @@
 
 body {
     font-family: var(--body-font);
-    margin: 0;
     font-size: var(--normal-font-size);
 }
 
@@ -172,6 +171,8 @@ nav {
 
 #info {
     display: flex;
+    margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 #info .fas.fa-info {
