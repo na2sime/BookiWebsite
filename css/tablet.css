@@ -9,9 +9,10 @@
 /*===== Hebergements =====*/
 #firstSection {
     max-width: 992px;
+    max-height: 750px;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 155px;
+    align-items: center;
 }
 
 #city {

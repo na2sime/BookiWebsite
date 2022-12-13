@@ -196,7 +196,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     gap: 25px;
-    height: 600px;
+    max-height: 600px;
 }
 
 #city {
@@ -205,7 +205,7 @@ nav {
     align-items: flex-start;
     background-color: var(--background-color);
     border-radius: 18px 18px 18px 18px;
-    padding: 30px;
+    padding: 1%;
     width: 60%;
 }
 
@@ -271,7 +271,7 @@ nav {
     background-color: var(--background-color);
     border-radius: 18px 18px 18px 18px;
     width: 40%;
-    padding: 25px 30px 30px 30px;
+    padding: 1%
 }
 
 #popular .title {
