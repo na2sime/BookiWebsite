@@ -362,8 +362,8 @@ nav {
 }
 
 #activity .card {
-    width: 70%;
-    height: 80%;
+    width: 20%;
+    height: 90%;
     background: white;
     border-radius: 30px 30px 30px 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062);
@@ -388,4 +388,33 @@ nav {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
     transform: translateX(-5px) translateY(6px) scale(1.02);
     cursor: pointer;
+}
+
+/*===== footer =====*/
+
+footer {
+    margin: 0 75px 0;
+    padding: 0 30px 0;
+    height: 200px;
+    display: flex;
+    background-color: var(--background-color);
+}
+
+.footerInfo {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 70%;
+}
+
+.footerInfo h2 {
+    font-size: 130%;
+}
+
+.footerInfo a {
+    text-decoration: none;
+    color: black;
+    font-size: 115%;
 }
