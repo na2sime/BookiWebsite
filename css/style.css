@@ -196,7 +196,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     gap: 25px;
-    max-height: 600px;
 }
 
 #city {

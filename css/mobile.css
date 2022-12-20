@@ -68,7 +68,6 @@ nav {
     display: flex;
     padding: 0;
     flex-direction: column;
-    max-height: 800px;
     gap: 0;
 }
 
@@ -119,19 +118,26 @@ nav {
     height: 80%;
 }
 
+#popular .card {
+    height: 140px;
+}
+
 #popular .title {
     justify-content: space-around;
 }
-
 /*===== Activités =====*/
 
 #activity {
     margin-top: 35px;
     padding: 0;
     gap: 25px;
-    height: 500px;
+    height: auto;
 }
 
 #activity .cardContainer {
     flex-direction: column;
+}
+
+footer {
+    margin: 0;
 }
