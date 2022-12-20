@@ -115,7 +115,7 @@ nav {
 
 #popular .cardContainer {
     flex-direction: column;
-    height: 80%;
+    height: 70%;
 }
 
 #popular .card {
@@ -123,21 +123,52 @@ nav {
 }
 
 #popular .title {
-    justify-content: space-around;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+#popular .title i{
+    align-self: flex-end;
 }
 /*===== Activités =====*/
 
 #activity {
     margin-top: 35px;
+    margin-bottom: 35px;
     padding: 0;
     gap: 25px;
     height: auto;
 }
 
-#activity .cardContainer {
-    flex-direction: column;
+#activity h1 {
+    margin: 20px;
 }
+
+#activity .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+#activity .card {
+    width: 75%;
+    height: 60%;
+    background: white;
+    transition: 0.8s;
+}
+
+#activity .card img {
+    width: 100%;
+    height: 140px;
+    border-radius: 25px 25px 0 0;
+}
+
+/*===== footer =====*/
 
 footer {
     margin: 0;
+    flex-direction: column;
+    height: auto;
 }
