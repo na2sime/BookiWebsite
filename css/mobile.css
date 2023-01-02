@@ -46,6 +46,10 @@ nav {
     align-items: center;
 }
 
+#search form {
+    margin: 15px;
+}
+
 /*===== Filter =====*/
 
 #filter {
@@ -109,6 +113,7 @@ nav {
 /*===== Populaire =====*/
 
 #popular {
+    padding: 0 0 20px 0;
     border-radius: 0px 0px 0px 0px;
     height: 45%;
 }
@@ -123,13 +128,23 @@ nav {
 }
 
 #popular .title {
-    padding-left: 20px;
+    padding: 0;
     gap: 20px;
 }
 
-#popular .title i{
+#popular .star {
+    margin-top: 40px;
+}
+
+#popular .title h1 {
+    margin: 20px 60px;
+}
+
+#popular .title i {
+    margin: 20px 20px 20px 50%;
     align-self: flex-end;
 }
+
 /*===== Activités =====*/
 
 #activity {
