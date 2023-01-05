@@ -78,13 +78,21 @@ header {
 }
 
 #searchBar {
-    height: 40px;
+    height: 45px;
+    width: 18%;
     display: flex;
 }
 
+#search #titles h1 {
+    font-size: 180%;
+}
+
+#search #titles span {
+    font-size: 150%;
+}
+
 form {
-    /*width: 90px;*/
-    height: 40px;
+    height: 50px;
     display: flex;
 }
 
@@ -282,7 +290,6 @@ nav {
 }
 
 #popular .title i {
-    margin-left: 10px;
     width: 15px;
     height: 15px;
 }
