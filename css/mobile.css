@@ -1,3 +1,14 @@
+:root {
+    /*===== COLORS =====*/
+    --first-color: #0065FC;
+    --second-color: #DEEBFF;
+    --background-color: #F2F2F2;
+    /*===== Tipo =====*/
+    --body-font: 'Raleway', sans-serif;
+    --normal-font-size: .838rem;
+    --smaller-font-size: .75rem;
+}
+
 * {
     padding: 0;
 }
@@ -15,6 +26,28 @@ header {
 
 nav {
     width: 100%;
+}
+
+#searchIcon{
+    display: block;
+    height: 100%;
+    min-width: 40px;
+    background: var(--first-color);
+    color: white;
+    cursor: pointer;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 0 13px 13px 0;
+    border: 2px solid var(--first-color);
+}
+
+#searchText {
+    display: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    color: transparent;
+    border: none;
 }
 
 #menu {
