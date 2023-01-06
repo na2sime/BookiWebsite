@@ -306,7 +306,7 @@ nav {
 
 #popular .card {
     width: 90%;
-    height: 25%;
+    height: 163px;
     background: white;
     border-radius: 30px 30px 30px 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062);
@@ -320,7 +320,7 @@ nav {
 
 #popular .card img {
     width: 30%;
-    height: 155px;
+    height: 140px;
     padding: 6px;
     border-radius: 25px 0 0 25px;
     object-fit: cover;
